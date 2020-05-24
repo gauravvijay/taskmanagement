@@ -4,7 +4,7 @@
 This example code for creating three flavors of a Task Manager.
 
 While this particular problem could be solved as easily with inheritance/abstract classes, 
-We chose composition over inheritance to allow future flexibility in what a task manager should
+We chose composition over inheritance (ie. abstract classes) to allow future flexibility in what a task manager should
 care about.
 
 ### Code packages
@@ -22,5 +22,6 @@ care about.
 - org.com.taskmanagement contains integration tests that test the public wrappers.
 
 #### Caveat
-- The tests are more integration tests which test the public api rather than each component separately.
-This is a conscious choice by a lazy developer, and shouldn't be done in production. 
+- The tests are more like integration tests which test the public specification rather than each component separately.
+This is a conscious choice by a lazy developer, as it achieves required branch coverage. But a full solution should have
+component wise unit tests and shouldn't be done in production. 
